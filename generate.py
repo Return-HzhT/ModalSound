@@ -35,11 +35,6 @@ def compute_sample_r(vertices, triangles, n):
 
 filename = "./dataset/mesh/bowl_0001.obj"
 
-# pcd_dataset_folder_path = "./dataset/pcd_dataset"
-# data_path = os.path.join(pcd_dataset_folder_path, os.path.basename(filename).replace('.npy', '_0.npz'))
-# data = np.load(data_path)
-# pcd = data['pcd']
-
 surf_vertices, surf_triangles = read_obj_with_open3d(filename)
 scale = 0.2
 if surf_vertices is not None and surf_triangles is not None:
