@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+dataset/
+split_dataset/
+test.txt
+train.txt
+valid.txt
