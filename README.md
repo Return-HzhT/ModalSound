@@ -5,12 +5,12 @@
 依次调用dataset_scripts内以下程序进行数据处理
 
 1. voxelize.py：mesh(obj) -> voxel
-2. voxel_check.py：voxel ->_connect.npy
+2. voxel_check.py：voxel -> voxel_connect.npy
 3. modal_analysis.py: voxel -> eigen, ffat, residual
 4. residual_check.py: residual -> residual_ok.npy
 5. voxel2pcd.py：voxel, eigen, ffat -> pcd_dataset，normalized_pcd_dataset（采样点云，特征值、特征向量和ffat的数据规范化）
 6. eigen_mask.py：scaled_pcd_dataset -> final_pcd_dataset（特征值掩码）
-7. splitDataset.py：pcd, pcd_eigen, ffat_map->train, test (划分训练集、验证集和测试集) 
+7. splitDataset.py：pcd, pcd_eigen, ffat_map -> train, test (划分训练集、验证集和测试集) 
 
 ## 神经网络
 
